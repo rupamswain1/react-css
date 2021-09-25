@@ -3,5 +3,5 @@ header{
     background-image: linear-gradient(to right,#7ed56fc5,#28b485b9),url('../../../assets/ghumoAssets/img/hero.jpg');
     background-size: cover;
     clip-path: polygon(0 0,100% 0,100% 85%,0% 100%);
-    
+    position: relative;
 }

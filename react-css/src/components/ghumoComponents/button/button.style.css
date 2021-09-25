@@ -1,0 +1,66 @@
+.btn:link,
+.btn:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all 0.2s;
+    position: relative;
+    font-size: 12px;
+    font-weight: 100;
+    font-family: Lato;
+    width: 40%;
+}
+
+.btn-white{
+    background-color: #fff;
+    color: black;
+}
+.btn:hover{
+    transform: translateY(-7px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);
+}
+.btn:active{
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+.btn::after{
+    content:"";
+    display:inline-block;
+    height:100%;
+    width:100%;
+    border-radius:100px;
+    position:absolute;
+    top: 0;
+    left:0;
+    z-index:-1;
+    transition: all 0.5s;
+}
+.btn-white::after{
+    background-color: #fff;
+    color:black;
+}
+.btn:hover::after{
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+.btn-animated{
+    animation: moveUp 1s ease-out 0.7s;
+    animation-fill-mode: backwards; /*used to keep 0% keyframe for element until the animation starts*/
+}
+@keyframes moveUp {
+    0%{
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    70%{
+        opacity: 0.7;
+        transform: translateY(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    
+}
