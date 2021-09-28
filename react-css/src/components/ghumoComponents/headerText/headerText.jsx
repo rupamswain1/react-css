@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from '../button/button';
 
-import './headerText.style.css';
+import './headerText.style.scss';
 
 function HeaderText() {
     return (

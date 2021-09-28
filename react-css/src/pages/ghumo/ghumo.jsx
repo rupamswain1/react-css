@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../../components/ghumoComponents/header/header.component';
-import './ghumo.css';
+import './ghumo.style.scss';
 
 function GhumoPage() {
     return (

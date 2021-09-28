@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from '../../../assets/ghumoAssets/img/logo-white.png'
 
-import './headerLogo.style.css'
+import './headerLogo.style.scss'
 function HeaderLogo() {
     return (
         <div className='logoContainer'>
