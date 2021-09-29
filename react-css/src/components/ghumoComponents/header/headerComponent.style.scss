@@ -1,6 +1,7 @@
+@import "../../../sass/abstracts/variables";
 header{
     height:95vh;
-    background-image: linear-gradient(to right,#7ed56fc5,#28b485b9),url('../../../assets/ghumoAssets/img/hero.jpg');
+    background-image: linear-gradient(to right,rgba($color-primary-light,0.5),rgba($color-primary-dark,0.9)),url('../../../assets/ghumoAssets/img/hero.jpg');
     background-size: cover;
     clip-path: polygon(0 0,100% 0,100% 85%,0% 100%);
     position: relative;
