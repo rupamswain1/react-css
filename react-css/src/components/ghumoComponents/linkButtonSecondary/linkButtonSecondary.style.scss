@@ -1,0 +1,25 @@
+@import '../../../sass/abstracts/variables';
+
+.link-btn-text{
+    &:link,
+    &:visited{
+        color:$color-primary;
+        text-decoration: none;
+        display: inline-block;
+        padding: 3px;
+        border-bottom: 2px solid $color-primary;
+        font-size: $default-font-size;
+        transition: all 0.2s;
+    }
+    &:hover{
+        background-color: $color-primary;
+        color: $color-white;
+        border-bottom: 2px solid $color-white;
+        box-shadow: 0.5rem 2rem 1rem rgba($color-black,0.2);
+    
+    }
+    &:active{
+
+    }
+
+}

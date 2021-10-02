@@ -1,0 +1,8 @@
+@import '../../../sass/abstracts/variables';
+
+.tertiary-heading{
+    font-size: $default-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
