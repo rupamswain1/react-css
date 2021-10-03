@@ -4,6 +4,11 @@ import TertiaryHeading from '../tertiaryHeading/tertiaryHeading'
 import Paragraph from '../paragraph/paragraph';
 import LinkButtonSecondary from '../linkButtonSecondary/linkButtonSecondary';
 import './aboutSection.style.scss'
+import img1 from '../../../assets/ghumoAssets/img/nat-1-large.jpg'
+import img2 from '../../../assets/ghumoAssets/img/nat-2-large.jpg'
+import img3 from '../../../assets/ghumoAssets/img/nat-3-large.jpg'
+
+//const img1='../../../assets/ghumoAssets/img/nat-1.jpg'
 function AboutSection() {
     return (
         <>
@@ -26,11 +31,16 @@ function AboutSection() {
                        <LinkButtonSecondary text='Learn More &rarr;'/>
                     </div>
                     <div className='col-1-of-2'>
-                        Image will be displayed here
+                        <div class="composition">
+                            <img src={img1} alt="photo1" className="composition__photo composition__photo--p1"/>
+                            <img src={img2} alt="photo2" className="composition__photo composition__photo--p2"/>
+                            <img src={img3} alt="photo3" className="composition__photo composition__photo--p3"/>
+                        </div>
                     </div>
                 </div>
            
             </section>
+            
             
         </>
     )

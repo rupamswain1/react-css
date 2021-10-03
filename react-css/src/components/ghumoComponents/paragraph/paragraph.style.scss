@@ -2,7 +2,7 @@
 
 .paragraph{
     font-size: $default-font-size;
-    text-align: justify;
+    
     &:not(:last-child){
         margin-bottom: 3rem;
     }
