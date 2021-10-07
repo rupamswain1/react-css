@@ -2,9 +2,9 @@ import React from 'react'
 
 import "./button.style.scss";
 
-function Button() {
+function Button({text,style}) {
     return (
-        <a href="#" className="btn btn-white btn-animated">discover our tours</a>
+        <a href="#" className={`btn btn-white btn-animated ${style}`}>{text}</a>
     )
 }
 

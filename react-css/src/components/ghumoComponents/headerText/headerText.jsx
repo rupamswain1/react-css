@@ -9,7 +9,7 @@ function HeaderText() {
             <h1 className="headingPrimary-container"> 
                 <span className="headingPrimary">Outdoors</span>
                 <span className="headingSub">is where life happens</span>
-                <Button/>
+                <Button text='discover our tours'/>
             </h1>
         </div>
     )
