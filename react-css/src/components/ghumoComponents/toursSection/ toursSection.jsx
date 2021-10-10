@@ -1,5 +1,6 @@
 import React from 'react'
 import SecondaryHeader from '../secondaryHeader/secondaryHeader';
+import Button from '../button/button';
 import Cards from '../cards/cards';
 import './toursSection.style.scss'
 
@@ -57,6 +58,10 @@ function  ToursSection() {
                         })
                         }
                 </div>
+                <div className='section__button'>
+                     <Button text='discover all tours' style='btn-green'/>      
+                </div>
+                       
         </section>
     )
 }

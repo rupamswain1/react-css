@@ -1,0 +1,26 @@
+@import '../../../sass/abstracts/variables';
+.story-section{
+   // background-color: $color-light-grey;
+    padding: 2rem 0 25rem 0;
+    //margin-top: -2rem;
+    position: relative;
+    &__link-btn-center{
+        text-align: center;
+    }
+}
+.bg-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.2;
+    overflow: hidden;
+    &__content{
+        width: 100%;
+        height:100%;
+        object-fit:cover;
+    }
+    
+}

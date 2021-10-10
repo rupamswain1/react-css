@@ -24,6 +24,14 @@
         color:black;
     }
 }
+.btn-green{
+    background-color: $color-primary-dark ; 
+    color: $color-white;
+    &::after{
+        background-color: $color-primary-dark;
+        color:$color-white;
+    }
+}
 .btn{
     &:hover{
         transform: translateY(-0.7rem);
