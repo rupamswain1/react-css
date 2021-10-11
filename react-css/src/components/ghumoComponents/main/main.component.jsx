@@ -3,6 +3,7 @@ import AboutSection from '../aboutSection/aboutSection.compoent';
 import FeatureSection from '../../ghumoComponents/featureSection/featureSection';
 import ToursSection from '../toursSection/ toursSection';
 import StoriesSection from '../storiesSection/storiesSection';
+import BookingSection from '../bookingSection/bookingSection';
 function Main() {
     return (
         <main>
@@ -10,6 +11,7 @@ function Main() {
             <FeatureSection/>
             <ToursSection/>
             <StoriesSection/>
+            <BookingSection/>
         </main>
     )
 }
