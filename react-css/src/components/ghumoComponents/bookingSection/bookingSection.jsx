@@ -10,10 +10,10 @@ function BookingSection() {
                     
                     <div className='book__form'>
                         <form action='#' className='form'>
-                            <SecondaryHeader textContent='start bookin now'/>
+                            <SecondaryHeader textContent='start bookin now' Style='book_from_heading u-margin-bottom-small'/>
                             <div className='form__group'>
                                 <input type='text' className='form__input' placeholder='Full Name' id='name' required/>
-                                <label for='name' className='form__label'> Full Name</label>
+                                <label for='name' className='form__label'>Full Name</label>
                             </div>
                             <div className='form__group'>
                                 <input type='email' className='form__input' placeholder='Email' id='email' name='email  ' required/>
