@@ -1,6 +1,7 @@
 import React from 'react'
 import SecondaryHeader from '../secondaryHeader/secondaryHeader';
 import Button from '../button/button';
+import InputField from '../inputField/inputField';
 import './bookingSection.style.scss';
 
 function BookingSection() {
@@ -12,14 +13,8 @@ function BookingSection() {
                     <div className='book__form'>
                         <form action='#' className='form'>
                             <SecondaryHeader textContent='start bookin now' Style='book_from_heading u-margin-bottom-small'/>
-                            <div className='form__group'>
-                                <input type='text' className='form__input' placeholder='Full Name' id='name' required/>
-                                <label for='name' className='form__label'>Full Name</label>
-                            </div>
-                            <div className='form__group'>
-                                <input type='email' className='form__input' placeholder='Email' id='email' name='email  ' required/>
-                                <label for='email' className='form__label'>Email Address</label>
-                            </div>
+                            <InputField type='text' placeholder='Full Name' id='name' lable='Full Name' required={true}/>
+                            <InputField type='email' placeholder='Email' id='email' lable='Email' required={true}/>
                             <div className='form__group'>
                                 <div className='form__radio-group'>
                                     <input type='radio' className='form__radio-input' id='small' name='book-radio'/>
