@@ -5,9 +5,10 @@ import ToursSection from '../toursSection/ toursSection';
 import StoriesSection from '../storiesSection/storiesSection';
 import BookingSection from '../bookingSection/bookingSection';
 import Footer from '../footer/Footer';
+
 function Main() {
     return (
-        <main>
+        <main>           
             <AboutSection/>
             <FeatureSection/>
             <ToursSection/>
