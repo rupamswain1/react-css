@@ -1,8 +1,13 @@
 @import "../../../sass/abstracts/variables";
+@import "../../../sass/abstracts/mixins";
 header{
     height:95vh;
     background-image: linear-gradient(to right,rgba($color-primary-light,0.5),rgba($color-primary-dark,0.9)),url('../../../assets/ghumoAssets/img/hero.jpg');
     background-size: cover;
     clip-path: polygon(0 0,100% 0,100% 85%,0% 100%);
     position: relative;
+
+    @include respond(phone){
+        clip-path: polygon(0 0,100% 0,100% 83%,0% 90%);
+    }
 }

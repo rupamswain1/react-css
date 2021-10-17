@@ -1,4 +1,5 @@
 @import '../../../sass/abstracts/variables';
+@import '../../../sass/abstracts/mixins';
 .navigation{
     &__checkbox{
         display: none;
@@ -17,6 +18,7 @@
             cursor: pointer;
         }
         text-align: center;
+
     }
     &__background{
         height: 6rem;
@@ -97,6 +99,10 @@
     &__icon{
         position: relative;
         margin-top: 3.5rem;
+        @include respond(phone){
+            top:-0.2rem;
+        }
+       
         &,
         &::before,
         &::after{
@@ -115,9 +121,15 @@
         }
         &::before{
             top: -0.8rem;
+            @include respond(phone){
+                top:-0.8rem;
+            }
         }
         &::after{
             top: 0.8rem;
+            @include respond(phone){
+                top:1rem;
+            }
         }
 
     }
@@ -126,6 +138,7 @@
     }
     &__button:hover &__icon::after{
         top:1rem;
+      
     }
     &__checkbox:checked + &__button &__icon{
         background-color: transparent;       
