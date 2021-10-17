@@ -45,7 +45,7 @@ const cardData=[
 
 function  ToursSection() {
     return (
-        <section className="section-tours">
+        <section className="section-tours" id='section-tours'>
                 <SecondaryHeader textContent='most popular tours' Style='u-test-center u-margin-bottom-big'/>
                 <div className="row">
                     

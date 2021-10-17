@@ -2,9 +2,12 @@ import React from 'react'
 
 import "./button.style.scss";
 
-function Button({text,style}) {
+function Button({text,style,target}) {
+    if(!target){
+        target="";
+    }
     return (
-        <a href="#" className={`btn btn-white btn-animated ${style}`}>{text}</a>
+        <a href={`#${target}`} className={`btn btn-white btn-animated ${style}`}>{text}</a>
     )
 }
 

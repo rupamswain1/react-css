@@ -35,7 +35,7 @@ function Cards({sno,heading,details,price,image}) {
                             {price}
                         </p>
                     </div>
-                    <Button text='book now' style='card__btn'/>
+                    <Button text='book now' style='card__btn' target='booking-popup'/>
 
                 </div>
             </div>
