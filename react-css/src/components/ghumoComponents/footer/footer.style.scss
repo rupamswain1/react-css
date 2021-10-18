@@ -4,8 +4,17 @@
     background-color: $color-dark-grey-3;
     padding:10rem 0;
     font-size: 1.4rem;
+    @include respond(tab-land){
+        padding:8rem 0;
+        font-size: 1.4rem;
+    }
     @include respond(tab-port){
         padding:8rem 0;
+        font-size: 1.3rem;
+    }
+    @include respond(phone){
+        padding:5rem 0;
+        font-size: 3rem;
     }
     &__logo-box{
         text-align: center;
@@ -13,7 +22,10 @@
         
     }
     &__logo{
-
+        @include respond(tab-land){
+            width: 10%;
+            text-align: center;
+        }
     }
     &__navigation{
         border-top: 1px solid $color-light-grey-2;
@@ -23,6 +35,7 @@
             width: 100%;
             text-align: center;
         }
+        
     }
     &__list{
         list-style:none;

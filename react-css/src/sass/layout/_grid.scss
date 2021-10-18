@@ -13,7 +13,10 @@
     }
 
     @include respond(tab-port){
-        max-width: 50rem;
+        max-width: 75rem;
+    }
+    @include respond(phone){
+        max-width: 100rem;
     }
 
     @include clearfix;
@@ -23,7 +26,7 @@
             margin-right: $gutter-horizontal;
 
             @include respond(tab-port){
-                margin-right: 0;
+                margin-right: auto;
                 margin-bottom: $gutter-vertical-small;
                 
             }
@@ -37,6 +40,9 @@
    
     .col-1-of-2{ 
         width: calc((100% - #{$gutter-horizontal}) / 2);
+        @include respond(tab-port){
+            width:100% !important;
+        }
     }
     .col-1-of-3{
         width: calc((100% - 2*#{$gutter-horizontal})/3);

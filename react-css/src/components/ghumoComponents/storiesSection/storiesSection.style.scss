@@ -1,4 +1,6 @@
 @import '../../../sass/abstracts/variables';
+@import '../../../sass/abstracts/mixins';
+
 .story-section{
    // background-color: $color-light-grey;
     padding: 2rem 0 25rem 0;
@@ -6,6 +8,10 @@
     position: relative;
     &__link-btn-center{
         text-align: center;
+    }
+
+    @include respond(tab-port){
+        padding: 5rem 0;
     }
 }
 .bg-video{

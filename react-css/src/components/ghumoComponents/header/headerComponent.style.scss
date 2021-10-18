@@ -10,4 +10,10 @@ header{
     @include respond(phone){
         clip-path: polygon(0 0,100% 0,100% 83%,0% 90%);
     }
+    @include respond(tab-port){
+        clip-path: polygon(0 0,100% 0,100% 85%,0% 90%);
+    }
+    @include respond(tab-land){
+        clip-path: polygon(0 0,100% 0,100% 78%,0% 90%);
+    }
 }

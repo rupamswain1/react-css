@@ -1,4 +1,5 @@
 @import '../../../sass/abstracts/variables';
+@import '../../../sass/abstracts/mixins';
 
 .featureSection{
     padding: 20rem 0;
@@ -10,4 +11,8 @@
     }
     margin-top: -25rem;
     margin-bottom: 10rem;
+
+    @include respond(tab-port){
+        padding:15rem 0;
+    }
 }
