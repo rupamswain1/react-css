@@ -1,4 +1,5 @@
 @import '../../../sass/abstracts/variables';
+@import '../../../sass/abstracts/mixins';
 .form{
     &__input{
         font-size: 1.5rem;
@@ -13,6 +14,12 @@
         transition: all 0.2s;
         &::-webkit-input-placeholder{
             color:$color-dark-grey-2;
+            @include respond(tab-land){
+                font-size: 2.5rem;
+            }
+            @include respond(phone){
+                font-size: 3rem;
+            }
         }
         &:focus{
             outline: none;
@@ -38,6 +45,13 @@
         margin-top:0.7rem;
         display: block;
         transition: all .3s;
+
+        @include respond(tab-land){
+            font-size: 2rem;
+        }
+        @include respond(phone){
+            font-size: 3rem;
+        }
     }
 
     &__input:placeholder-shown + &__label{

@@ -12,15 +12,32 @@
     background-image: linear-gradient(110deg,rgba($color-white,0.9) 0%, rgba($color-white,0.9) 50%, transparent 50%),
         url(../../../assets/ghumoAssets/img/nat-10.jpg);
     background-size: 100%;
-    height: 50rem;
+    
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black,0.2);
     
- 
+    @include respond(tab-land){
+        background-image: linear-gradient(105deg,rgba($color-white,0.9) 0%, rgba($color-white,0.9) 70%, transparent 65%),
+        url(../../../assets/ghumoAssets/img/nat-10.jpg);
+        background-size: cover;
+    }
+
+    @include respond(tab-port){
+        background-image: linear-gradient(to right,rgba($color-white,0.9) 0%, rgba($color-white,0.9) 100%),
+        url(../../../assets/ghumoAssets/img/nat-10.jpg);
+        background-size: cover;
+    }
 }
 .form{
     width: 50%;
     padding: 1rem 3.5rem;
+    @include respond(tab-land){
+        width:65%;
+    }
+    @include respond(tab-port){
+        width:100%;
+    }
+
     &__group:not(:last-child){
         margin-bottom: 2rem;
         
@@ -31,6 +48,9 @@
     &__radio-group{
         display: inline-block;
         width: 50%;
+        @include respond(tab-port){
+            width:100%;
+        }
        
     }
     &__radio-input{
@@ -41,6 +61,13 @@
         cursor: pointer;
         position: relative;
         padding-left: 5rem;
+        @include respond(tab-land){
+            font-size: 2.5rem;
+            padding-left:6rem;
+        }
+        @include respond(phone){
+            font-size: 3.5rem;
+        }
     }
     &__radio-button{
         height:3rem;
@@ -52,6 +79,11 @@
         top:0;
         left:0;
         top:-0.5rem;
+        @include respond(phone){
+            height:5rem;
+            width: 5rem;
+           
+        }
         //transform: translate(-50%,-50%);
         &::after{
             content:"";    
@@ -66,6 +98,11 @@
             transform: translate(-50%, -50%);
             opacity: 0;
             transition: all 0.2s;
+            @include respond(phone){
+                height:2rem;
+                width: 2rem;
+               
+            }
         }
        
     }

@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '../button/button';
 import './cards.style.scss';
+import './cards-mobile.style.scss';
 import img1 from '../../../assets/ghumoAssets/img/nat-4.jpg';
 function Cards({sno,heading,details,price,image}) {
     
