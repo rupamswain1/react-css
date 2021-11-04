@@ -36,14 +36,14 @@ function AboutSection() {
                     <div className='col-1-of-2'>
                         <div class="composition">
                             <img srcSet={`${img1Of1} 300w, ${img1} 1000w`} 
-                                sizes={`(max-width:900px) 20vw, (max-width:600px) 30vw,300px`}
+                                sizes={`(max-width:900px) 20vw, (max-width:37.5em) 30vw,300px`}
                                 src={img1} alt="photo1" className="composition__photo composition__photo--p1"
                             />
                             <img srcSet={`${img1Of2} 300vw, ${img2} 1000w`}
-                                sizes={`(max-width:900px) 20vw (max-width:600px) 30vw, 300px`} 
+                                sizes={`(max-width:900px) 20vw (max-width:37.5em) 30vw, 300px`} 
                                 src={img2} alt="photo2" className="composition__photo composition__photo--p2"/>
                             <img srcSet={`${img1Of3} 300vw, ${img3} 1000w`}
-                                sizes={`(max-width:900px) 20vw (max-width:600px) 30vw, 300px`}
+                                sizes={`(max-width:900px) 20vw (max-width:37.5em) 30vw, 300px`}
                             src={img3} alt="photo3" className="composition__photo composition__photo--p3"/>
                         </div>
                     </div>

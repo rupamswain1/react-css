@@ -1,5 +1,5 @@
 @import '../../sass/abstracts/mixins';
-
+@import '../../sass/abstracts/variables';
 *{
     margin: 0;
     padding: 0;
@@ -34,4 +34,8 @@ html{
     @include respond(tab-port){
         padding:0;
     }
+}
+::selection{
+    background-color: $color-primary;
+    color:$color-white;
 }

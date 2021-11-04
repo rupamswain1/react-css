@@ -1,7 +1,8 @@
 @import '../../../sass/abstracts/variables';
 @import '../../../sass/abstracts/mixins';
 
-@include respond(tab-port)
+@media only screen and (max-width:56.25em),
+only screen and (hover:none)
 {
     .card{
         //FUNCTIONALITY
@@ -9,6 +10,7 @@
         border-radius: 5px;
         box-shadow: 0 1.5rem 4rem rgba($color-black,.2);
         background-color: $color-white;
+        
         
         &__side{
             height: auto;
@@ -29,12 +31,12 @@
         &__details{
             ul{
                 li{
-                    font-size: 3rem;
+                    font-size: 1.5rem;
                 }
             }
         }
         &__heading--span{
-            font-size: 8rem;
+            font-size: 3rem;
             padding: 2rem;
         }
         &__picture{
@@ -54,10 +56,10 @@
             
             margin-bottom: 3rem;
         }
-        &__price-only{
-            font-size: 3rem;
+        &__price-only,&__price-value{
+            font-size: 2rem;
         }
-      
+       
         
     }
 }
