@@ -5,8 +5,11 @@ import Paragraph from '../paragraph/paragraph';
 import LinkButtonSecondary from '../linkButtonSecondary/linkButtonSecondary';
 import './aboutSection.style.scss'
 import img1 from '../../../assets/ghumoAssets/img/nat-1-large.jpg'
+import img1Of1 from '../../../assets/ghumoAssets/img/nat-1.jpg'
 import img2 from '../../../assets/ghumoAssets/img/nat-2-large.jpg'
+import img1Of2 from '../../../assets/ghumoAssets/img/nat-2.jpg'
 import img3 from '../../../assets/ghumoAssets/img/nat-3-large.jpg'
+import img1Of3 from '../../../assets/ghumoAssets/img/nat-3.jpg'
 
 //const img1='../../../assets/ghumoAssets/img/nat-1.jpg'
 function AboutSection() {
@@ -32,9 +35,16 @@ function AboutSection() {
                     </div>
                     <div className='col-1-of-2'>
                         <div class="composition">
-                            <img src={img1} alt="photo1" className="composition__photo composition__photo--p1"/>
-                            <img src={img2} alt="photo2" className="composition__photo composition__photo--p2"/>
-                            <img src={img3} alt="photo3" className="composition__photo composition__photo--p3"/>
+                            <img srcSet={`${img1Of1} 300w, ${img1} 1000w`} 
+                                sizes={`(max-width:900px) 20vw, (max-width:600px) 30vw,300px`}
+                                src={img1} alt="photo1" className="composition__photo composition__photo--p1"
+                            />
+                            <img srcSet={`${img1Of2} 300vw, ${img2} 1000w`}
+                                sizes={`(max-width:900px) 20vw (max-width:600px) 30vw, 300px`} 
+                                src={img2} alt="photo2" className="composition__photo composition__photo--p2"/>
+                            <img srcSet={`${img1Of3} 300vw, ${img3} 1000w`}
+                                sizes={`(max-width:900px) 20vw (max-width:600px) 30vw, 300px`}
+                            src={img3} alt="photo3" className="composition__photo composition__photo--p3"/>
                         </div>
                     </div>
                 </div>
