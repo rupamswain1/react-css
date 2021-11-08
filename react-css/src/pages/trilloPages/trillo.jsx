@@ -1,5 +1,5 @@
 import React,{useEffect} from 'react'
-
+import './trillo.scss';
 
 function Trillo() {
     useEffect(()=>{
