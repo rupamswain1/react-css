@@ -2,28 +2,67 @@
     height: 7rem;
     background-color: #fff;
     border-bottom: var(--color-grey-light-2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
 }
 //////////////////////////////////////////////////////////////////////
 //LOGO
 .logo{
     height: 3.25rem;
+    margin-left: 3rem;
 }
 
 /////////////////////////////////////////////////////////////////////
 //SEARCH
 .search{
+    background-color: burlywood;
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &__input{
+        font-family: inherit;
+        font-size: 1.5rem;
+        background-color: var( --color-grey-light-2);
+        border: none;
+        color: inherit;
+        padding: .7rem 2rem;
+        border-radius: 100px;
+        width: 90%;
+        transition: all 0.2s;
+        margin-right:-3.5rem;
+        &:focus{
+            outline: none;
+            width: 100%;
+            background-color: var( --color-grey-light-3);
+        }
+        &::-webkit-input-placeholder{
+            font-weight: 100;
+            color: var(--color-grey-light-4);
+        }
 
     }
-    &__button{
+    &__buttons{
+        background-color:var( --color-grey-light-2);
+        border: none;
+        fill: var(--color-grey-dark-3);
+        &:focus{
+            outline: none;
+            background-color: var( --color-grey-light-3);
+        }
+        &:active{
+            transform: translateX(2px);
+        }
 
     }
     &__icon{
 
     }
     &__icon{
-        height:2.25 rem;
-        width: 2.25 rem;
+        height:2.25rem;
+        width: 2.25rem;
     }
 }
 
@@ -34,10 +73,8 @@
 
     }
     &__icon{
-
-    }
-    &___icon{
-
+        height:2.25rem;
+        width: 2.25rem;
     }
     &__notification{
         
@@ -48,7 +85,7 @@
         
     }
     &__user-photo{
-        height: 2.75 rem;
+        height: 2.75rem;
         border-radius: 50%;
     }
 }
