@@ -4,9 +4,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
+  
+.side-nav{
+    font-size: 1.5rem;
+    list-style: none;
+    margin-top: 3.5rem;
 }
-.sideBar-nav{
-
 }
 .legal{
     font-size: 1.2rem;

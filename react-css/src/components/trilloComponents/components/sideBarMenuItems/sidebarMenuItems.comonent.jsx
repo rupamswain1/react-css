@@ -1,8 +1,8 @@
 import React from 'react'
 import './sidebarMenuItems.style.scss';
-function SidebarMenuItems({logo,text}) {
+function SidebarMenuItems({logo,text,style}) {
     return (
-        <ul className='side-nav__item'>
+        <ul className={`side-nav__item ${style}`}>
             <a href='#' className='side-nav__link'>
                 <svg className='side-nav__icon'>
                     <use xlinkHref={logo}>

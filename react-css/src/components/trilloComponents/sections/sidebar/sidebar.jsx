@@ -7,6 +7,7 @@ const menuItemContent=[
         id:1,
         logo:`${sprite}#icon-home`,
         text:'Hotel',
+        style:'side-nav__item--active'
     },
     {
         id:2,
