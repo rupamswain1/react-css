@@ -10,10 +10,7 @@ import img4 from '../../../../assets/trilloAssets/img/user-6.jpg';
 
 let paragrah1="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,"
 let paragraph2= "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
-<<<<<<< HEAD
-=======
 let features=['Close to the Beach','Breakfast included','Free Airport Shuttle','Free Wifi in All Rooms','Air conditioning and Heating','Pets Allowed','We Speak All Languages','Perfect for Families']
->>>>>>> 2bf393e75f1b9459aa88c81010d71a61416b3bd6
 function Description() {
     return (
         <div className='description'>
