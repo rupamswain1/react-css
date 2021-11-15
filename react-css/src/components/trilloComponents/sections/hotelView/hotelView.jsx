@@ -1,10 +1,12 @@
 import React from 'react'
 import Overview from '../overview/overview.component'
+import HotelDetails from '../hotelDetails/hotelDetails.component'
 import './hotelView.style.scss'
 
 import img1 from '../../../../assets/trilloAssets/img/hotel-1.jpg'
 import img2 from '../../../../assets/trilloAssets/img/hotel-2.jpg'
 import img3 from '../../../../assets/trilloAssets/img/hotel-3.jpg'
+
 
 function HotelView() {
     return (
@@ -26,6 +28,8 @@ function HotelView() {
                 averageRating={8.9}
                 ratingCount={420}
             />
+            <HotelDetails/>
+            
         </main>
     )
 }

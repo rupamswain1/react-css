@@ -1,4 +1,5 @@
 import React from 'react'
+import PulsatingButton from '../../components/pulsatingButton/pulsatingButton.component';
 import './overview.style.scss';
 import sprite from '../../../../assets/trilloAssets/icon/sprite.svg';
 function Overview({heading,location,averageRating,ratingCount}) {
@@ -28,7 +29,7 @@ function Overview({heading,location,averageRating,ratingCount}) {
                 <svg className='overview__icon-location'>
                     <use xlinkHref={`${sprite}#icon-location-pin`}></use>
                 </svg>
-                <button className='btn-inline'>{location}</button>
+                <PulsatingButton text={location}/>
             </div>
             <div className='overview__rating'>
                 <div className='overview__rating-average'>{averageRating}</div>
