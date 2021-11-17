@@ -9,7 +9,7 @@ function App() {
     <div className="App">
         <BrowserRouter>
             <Routes>
-              <Route path='' element={<RoutesPage/>}/>
+              <Route path='/react-css' element={<RoutesPage/>}/>
               <Route path='/ghumo' element={<GhumoPage/>}/>
               <Route path='trillo' element={<Trillo/>}/>
             </Routes>
