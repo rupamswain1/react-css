@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './listItem.style.scss';
 function ListItem({text}) {
     return (
        <li className='list__item'>
@@ -8,4 +8,4 @@ function ListItem({text}) {
     )
 }
 
-export default ListItem
+export default ListItem 

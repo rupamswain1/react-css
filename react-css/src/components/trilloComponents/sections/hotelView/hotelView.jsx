@@ -1,6 +1,7 @@
 import React from 'react'
 import Overview from '../overview/overview.component'
 import HotelDetails from '../hotelDetails/hotelDetails.component'
+import Cta from '../cta/cta.component'
 import './hotelView.style.scss'
 
 import img1 from '../../../../assets/trilloAssets/img/hotel-1.jpg'
@@ -29,8 +30,9 @@ function HotelView() {
                 ratingCount={420}
             />
             <HotelDetails/>
-            
+            <Cta/>
         </main>
+
     )
 }
 

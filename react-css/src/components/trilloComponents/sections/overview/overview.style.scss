@@ -1,3 +1,4 @@
+@import '../../../../pages/trilloPages/trillo.scss';
 .overview{
     display: flex;
     //justify-content: space-between;
@@ -9,6 +10,10 @@
         text-transform: uppercase;
         letter-spacing: 1px;
         padding: 1.5rem;
+        @media only screen and (max-width:$bp-small){
+            font-size: 1.8rem;
+            padding: 1.25rem 2rem;
+        }
     }
     &__stars{
         margin-right: auto;
@@ -40,16 +45,25 @@
         align-items: center;
         justify-content: center;
         align-self:stretch;
+        @media only screen and (max-width:$bp-small){
+            padding: 0rem 1.2rem;
+        }
     }
     &__rating-average{
         font-size: 1.5rem;
         font-weight: bold;
         margin-bottom: -3px;
+        @media only screen and (max-width:$bp-small){
+            font-size: 2rem;
+        }
     }
 
     &__rating-count{
        font-size: 1rem;
        text-transform: uppercase;
        font-weight: bold; 
+       @media only screen and (max-width:$bp-small){
+        font-size: 1.1rem;
+    }
     }
 }

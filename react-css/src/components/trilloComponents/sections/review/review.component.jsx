@@ -20,6 +20,7 @@ function Review({reviewText,userPicture,userName,userDate,rating}) {
                 </div>
                 <div className='review__rating'>{rating}</div>
             </figcaption>
+            
         </figure>
     )
 }

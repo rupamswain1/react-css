@@ -14,6 +14,7 @@ function Trillo() {
             <div className='content'>
                 <Sidebar/>
                 <HotelView/>
+                
             </div>
         </div>
     )
