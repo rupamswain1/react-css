@@ -29,4 +29,4 @@ function Nexter() {
     )
 }
 
-export default Nexter
+export default Nexter;
