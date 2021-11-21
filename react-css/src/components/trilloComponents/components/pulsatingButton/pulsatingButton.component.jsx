@@ -1,8 +1,8 @@
 import React from 'react'
 import './pulsatingButton.scss'
-function PulsatingButton({text}) {
+function PulsatingButton({text,style}) {
     return (
-        <button className='pulsatingButton'>
+        <button className={`pulsatingButton ${style}`}>
             {text}
         </button>
     )

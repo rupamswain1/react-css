@@ -1,3 +1,4 @@
+@import '../../../../pages/trilloPages/trillo.scss';
 .header{
     height: 7rem;
     background-color: #fff;
@@ -7,6 +8,10 @@
     align-items: center;
     font-size: 1.4rem;
     border-bottom: 2px solid var(--color-grey-light-2);
+    @media only screen and (max-width:$bp-smallest){
+        flex-wrap: wrap;
+        height: 12rem;
+    }
 }
 //////////////////////////////////////////////////////////////////////
 //LOGO
@@ -22,6 +27,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media only screen and (max-width:$bp-smallest){
+        order:1;
+        flex:0 0 100%;
+        align-content: space-between;
+    }
     &__input{
         font-family: inherit;
         font-size: 1.5rem;

@@ -26,7 +26,7 @@ function Description() {
                 }
             </ul>
             <div className='recommend'>
-                <p className='recommend__Count'>'Lucy and 3 Other friend recomended this Hotel'</p>
+                <p className='recommend__count'>'Lucy and 3 Other friend recomended this Hotel'</p>
                 <div className='recommend__friends'>
                     <img src={img1} alt='Friend 1' className='recommend__photo'/>
                     <img src={img2} alt='Friend 2' className='recommend__photo'/>

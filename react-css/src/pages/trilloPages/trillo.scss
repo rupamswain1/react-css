@@ -18,7 +18,12 @@
     --shadow:0 2rem 6rem rgba(0,0,0,3);
     --shadow-light:0 2rem 5rem rgba(0,0,0,0.6);
 }
-
+//Break points
+$bp-largest: 75em; //1200px
+$bp-large: 68.75em;//1100px
+$bp-medium: 56.25em; //900px
+$bp-small: 37.5em; //900px 
+$bp-smallest: 31.25em; //500px
 *{
     margin: 0;
     padding-top: 0;
@@ -32,6 +37,10 @@
 html{
     box-sizing: border-box;
     font-size: 62.5% !important; //1rem=10px 10px/16px=62.5%
+
+    @media only screen and (max-width:$bp-large){
+        font-size: 50%;
+    }
 }
 
 body{
@@ -52,8 +61,22 @@ body{
 
     box-shadow: var(--shadow);
     min-height: 50rem;
+
+    @media only screen and (max-width:$bp-largest){
+        margin: 0;
+        max-width: 100%;
+        width:100%;
+    }
+    @media only screen and (max-width:$bp-smallest){
+        max-width: 140%;
+        width: 106%;
+    }
 }
 .content{
     display: flex;
     
+    @media only screen and (max-width:$bp-medium){
+        flex-direction: column;
+    }
+   
 }
