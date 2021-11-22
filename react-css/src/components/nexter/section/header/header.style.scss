@@ -3,4 +3,5 @@
 .nexterHeader{
     background-color: $color-grey-dark-1;
     color: #fff;
+    grid-column: full-start/col-end 6;
 }

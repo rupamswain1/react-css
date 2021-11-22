@@ -2,4 +2,6 @@
 
 .nexterSideBar{
     background-color: $color-primary;
+    grid-column: side-bar/side-bar-end;
+    grid-row: 1/-1;
 }
