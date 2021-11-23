@@ -3,4 +3,5 @@
 .nexterFooter{
     background-color: $color-secondary;
     color: #fff;
+    grid-column: full-start/full-end;
 }
