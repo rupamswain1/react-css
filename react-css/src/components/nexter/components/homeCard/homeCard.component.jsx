@@ -12,7 +12,7 @@ function HomeCard({id,img,homeName,location,roomCount,size,price}) {
             <svg className='home__like'>
                 <use xlinkHref={`${sprite}#icon-heart-full`}></use>
             </svg>
-            <h5 className='name'>{homeName}</h5>
+            <h5 className='home__name'>{homeName}</h5>
             <div className='home__location'>
                 <svg>
                         <use xlinkHref={`${sprite}#icon-map-pin`}></use>
@@ -39,7 +39,7 @@ function HomeCard({id,img,homeName,location,roomCount,size,price}) {
                 </svg>
                 <p>${`${price}`}</p>
             </div>
-            <Button text='Contact Realtors'/>
+            <Button text='Contact Realtors' style='home__btn'/>
         </div>
     )
 }
