@@ -10,14 +10,14 @@ function App() {
     <div className="App">
         {/* Hashrouter is used in place of browser router as github pades does not support routing, when we use the hashRouter # added to url like 
         http://abc/#/path/ */}
-        <BrowserRouter> 
+        <HashRouter> 
             <Routes>
-              <Route path='/react-css' element={<RoutesPage/>}/>
+              <Route path='/' element={<RoutesPage/>}/>
               <Route path='/ghumo' element={<GhumoPage/>}/>
-              <Route path='trillo' element={<Trillo/>}/>
+              <Route path='/trillo' element={<Trillo/>}/>
               <Route path='/nexter' element={<Nexter/>}/>
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     </div>
   );
 }

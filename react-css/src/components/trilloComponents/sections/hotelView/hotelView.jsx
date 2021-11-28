@@ -12,15 +12,15 @@ import img3 from '../../../../assets/trilloAssets/img/hotel-3.jpg'
 function HotelView() {
     return (
         <main className='hotelView'>
-            <div className='gallary'>
-                <figure className='gallary__item'>
-                    <img src={img1} alt='Photo of hotel 1' className='gallary__photo'/>
+            <div className='trillogallary'>
+                <figure className='trillogallary__item'>
+                    <img src={img1} alt='Photo of hotel 1' className='trillogallary__photo'/>
                 </figure>
-                <figure className='gallary__item'>
-                    <img src={img2} alt='Photo of hotel 2' className='gallary__photo'/>
+                <figure className='trillogallary__item'>
+                    <img src={img2} alt='Photo of hotel 2' className='trillogallary__photo'/>
                 </figure>
-                <figure className='gallary__item'>
-                    <img src={img3} alt='Photo of hotel 3' className='gallary__photo'/>
+                <figure className='trillogallary__item'>
+                    <img src={img3} alt='Photo of hotel 3' className='trillogallary__photo'/>
                 </figure>
             </div>
             <Overview
